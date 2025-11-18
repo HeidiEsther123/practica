@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-header{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    height: 530px;
+
+}
+img{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+.main-header h1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #74e71d;
+    -webkit-text-stroke: 1px #284A18;
+    font-size:40px;
+    margin: bottom 20px;
+
+}
+.main-header button{
+    background: rgba(0, 255, 42, 0.625);
+    color: rgb(255, 255, 254);
+    padding: 15px 25px;
+    border: none;
+    border-radius:20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.1s ;
+}
+.main-header button:hover{
+    background: rgb(12, 127, 4) ;
+}
+.secciones{
+    padding: 7vh 20px;
+    text-align: center;
+    background:rgb(204, 255, 110) ;
+}
+.secciones h2{
+    font-size: 32px;
+    color:#74e71d;
+    margin-bottom: 60px;
+}
+.secciones-texto{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.secciones-texto div{
+    background:#74e71d;
+    border-radius: 20px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+.texto h3{
+    font-size: 24px;
+    color:#033c11;
+    margin-bottom: 20px ;
+
+}
+.texto p{
+    font-size: 34px;
+    color: rgb(234, 245, 234);
+}
+footer{
+    background: #3d661d;
+    color:#151f0d;
+    text-align:center;
+    position: relative;
+    padding: 20px;
+    font-size: 17px;
+    font-weight: bold;
+}
+.animatic {
+      font-size: 34px;
+      position: relative;
+      animation: mover 2s infinite alternate ease-in-out;
+    }
+
+    @keyframes mover {
+      20% { left: 0; transform: rotate(0deg); }
+      10% { left: 10px; transform: rotate(10deg); }
+      10% { left: 10px; transform: rotate(-5deg); }
+    }
